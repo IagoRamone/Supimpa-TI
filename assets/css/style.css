@@ -53,46 +53,50 @@ nav ul li a {
 
 .cursos-grid {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: end;
-  gap: 80px;
-  margin-top: -200px;
+  gap: 20px;
+  align-items: stretch;
 }
 
 .curso {
-  width: 30%;
-  height: 200px;
+  flex: 1;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-right: 5%;
   text-align: center;
   background-color: #f9f9f9;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 50px 0;
-  overflow: hidden; 
+  padding: 20px;
+  overflow: hidden;
 }
 
 .curso img {
   width: 100%;
-  height: 100%; /* Faz a imagem preencher o container */
-  object-fit: cover; /* Garante que a imagem não seja distorcida */
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
 .curso h4 {
-  margin-top: -20%;
-  font-size: 28px;
+  margin-top: 10px;
+  font-size: 1.5rem;
   color: #333;
 }
 
-.curso h3 {
-  margin-bottom: 20px;
-  font-size: 20px;
-  color: #333;
+.curso.grande {
+  flex: 2;
+}
+
+
+.curso.grande img {
+  height: 800px;
+}
+
+.lado-a-lado {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lado-a-lado .curso {
+  height: 100%;
 }
 
 

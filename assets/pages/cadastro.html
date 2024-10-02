@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Supimpa TI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/cadastro.css">
+    <link rel="icon" href="/assets/img/supimpa-logo.png">
+    <!--API viaCEP-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html"><h1>Supimpa TI</h1></a>
+        </div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Nosso Time</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="/assets/pages/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="container">
+    <div class="left">
+        <h2>Crie sua conta</h2>
+        <p>Bem-vindo(a), ao Supimpa!</p>
+        <img src="/assets/img/codelearn.svg" alt="Imagem" style="width: 100%; max-width: 300px;">
+    </div>
+
+    <div class="right">
+        <form id="registerForm" method="post" action="#">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel" name="tel" placeholder="Telefone">
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="Cep">
+
+            <label for="cep">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+
+            <label for="cep">Bairro</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+
+            <label for="cep">Endereço</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Senha" maxlength="6">
+
+            <label for="senha">Repita a Senha</label>
+            <input type="password" id="novasenha" name="novasenha" placeholder="Repita Senha" maxlength="6">
+
+            <button type="submit" class="btn">Cadastro</button>
+
+            <p>Já possui uma conta? <a id="login"  href="/assets/pages/login.html">Login</a></p>
+        </form>
+    </div>
+</div>
+<script src="/assets/js/cadastro.js"></script>
+</body>
+</html>

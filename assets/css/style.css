@@ -35,29 +35,20 @@ nav ul li a {
 }
 
 .banner {
-  background-color: #d3ffd4;
+  background-image: url(../img/codigo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 50px 0;
+  height: 200px;
 }
 
 .banner h2 {
   font-size: 2rem;
-  color: #4caf50;
+  color: #58ac32;
   font-size: 56px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.cursos {
-  padding: 40px 20px;
-  background-color: white;
-  text-align: center;
-}
-
-.cursos h3 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  color: #333;
-  display: flex;
 }
 
 .cursos-grid {
@@ -65,43 +56,46 @@ nav ul li a {
   flex-direction: column;
   justify-content: space-around;
   align-items: end;
-  gap: 40px;
+  gap: 80px;
   margin-top: -200px;
-}
-
-.curso_FrontEnd {
-  width: 30%;
-  height: 200px;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: start;
-  margin-top: 5%;
 }
 
 .curso {
   width: 30%;
   height: 200px;
-  background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-right: 5%;
+  text-align: center;
+  background-color: #f9f9f9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  overflow: hidden; 
 }
 
 .curso img {
   width: 100%;
+  height: 100%; /* Faz a imagem preencher o container */
+  object-fit: cover; /* Garante que a imagem não seja distorcida */
   border-radius: 8px;
 }
 
 .curso h4 {
-  margin-top: 10px;
-  font-size: 1.2rem;
+  margin-top: -20%;
+  font-size: 28px;
   color: #333;
 }
+
+.curso h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+}
+
+
 
 .aulas {
   padding: 40px 20px;
@@ -111,7 +105,7 @@ nav ul li a {
 
 .aulas h3 {
   margin-bottom: 20px;
-  font-size: 1.8rem;
+  font-size: 20px;
   color: #333;
   display: flex;
 }

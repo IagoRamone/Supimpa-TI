@@ -41,13 +41,15 @@ nav ul li a {
   background-repeat: no-repeat;
   text-align: center;
   padding: 50px 0;
-  height: 200px;
+  height: 300px;
 }
 
 .banner h2 {
   font-size: 2rem;
   color: #58ac32;
   font-size: 56px;
+  text-align: center;
+  margin-top: 35px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -74,6 +76,17 @@ nav ul li a {
   border-radius: 8px;
 }
 
+.cursos h3 {
+  display: flex;
+  font-size: 25px;
+  margin-top: 7%;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  margin-left: 1%;
+  border-bottom: 2px solid #333;
+  width: fit-content;
+}
+
 .curso h4 {
   margin-top: 10px;
   font-size: 1.5rem;
@@ -81,12 +94,13 @@ nav ul li a {
 }
 
 .curso.grande {
+  width: 100%;
   flex: 2;
+  height: 50%;
 }
 
-
 .curso.grande img {
-  height: 800px;
+  height: 500px;
 }
 
 .lado-a-lado {
@@ -99,8 +113,6 @@ nav ul li a {
   height: 100%;
 }
 
-
-
 .aulas {
   padding: 40px 20px;
   background-color: #f4f4f4;
@@ -108,16 +120,20 @@ nav ul li a {
 }
 
 .aulas h3 {
-  margin-bottom: 20px;
-  font-size: 20px;
-  color: #333;
   display: flex;
+  font-size: 25px;
+  margin-top: 5%;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  margin-left: 1%;
+  border-bottom: 2px solid #333;
+  width: fit-content;
 }
 
 .aulas-grid {
   display: flex;
   justify-content: space-around;
-  gap: 20px;
+  gap: 35px;
 }
 
 .aula {
@@ -146,10 +162,14 @@ nav ul li a {
 }
 
 .projetos h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #333;
   display: flex;
+  font-size: 25px;
+  margin-top: 5%;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  margin-left: 1%;
+  border-bottom: 2px solid #333;
+  width: fit-content;
 }
 
 .projetos p {
@@ -171,11 +191,7 @@ footer {
   text-align: center;
   color: white;
   height: 200px;
-}
-
-footer p {
-  display: flex;
-  margin-bottom: 10px;
+  position: relative;
 }
 
 footer a {
@@ -183,10 +199,32 @@ footer a {
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: end;
+  float: right; /* Move o link para a direita */
 }
+
+
+footer p {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #4caf50;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  height: 200px;
+  position: relative;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+  float: right; /* Move o link para a direita */
+}
+
 
 #copy {
   display: flex;

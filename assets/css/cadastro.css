@@ -7,7 +7,7 @@
 }
 
 body {
-    max-width: 1440px;
+    max-width: 2000px;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
@@ -136,8 +136,7 @@ nav {
     flex: 1;
     background-color: #4CAF50;
     padding: 40px;
-    overflow-y: auto; /* Permite rolagem vertical */
-    max-height: 400px; /* Define uma altura máxima para o contêiner */
+    overflow-y: auto; 
 }
 
 .container .right form {
@@ -185,30 +184,63 @@ nav {
 }
 
 /*Responsividade*/
+@media (min-width: 2000px) and (max-width: 2200px) {
+    .container {
+        max-width: 850px;
+        margin-left: 600px;
+        height: 700px;
+    }
+}
+@media (min-width: 1800px) and (max-width: 2000px) {
+    .container {
+        max-width: 850px;
+        margin-left: 600px;
+        height: 700px;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1800px) {
+    .container {
+        max-width: 850px;
+        margin-left: 400px;
+        height: 700px;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .container {
+        max-width: 850px;
+        margin-left: 400px;
+        height: 700px;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1400px) {
     .container {
         max-width: 850px;
         margin-left: 200px;
+        height: 700px;
     }
 }
 @media (min-width: 900px) and (max-width: 1200px) {
     .container {
         max-width: 850px;
+        height: 800px;
         margin-left: 70px;
+        height: 700px;
     }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
     .container {
         max-width: 800px;
-        margin-left: 20px;
+        margin-left: 50px;
+        height: 700px;
     }
 }
 
 @media (max-width: 700px) {
     .container {
         max-width: 780px;
-        margin-left: 10px;
+        margin-left: 30px;
+        height: 700px;
     }
 }
 @media (max-width: 768px) {

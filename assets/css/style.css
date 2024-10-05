@@ -1,3 +1,4 @@
+/* Estilos gerais já aplicados */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,13 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 }
-
+h3{
+  font-size: 25px;
+  margin: 7% 1% 15px;
+  border-bottom: 2px solid #333;
+  width: fit-content;
+}
+/* Estilos do cabeçalho */
 header {
   background-color: #4caf50;
   padding: 15px;
@@ -34,6 +41,7 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Banner */
 .banner {
   background-image: url(../img/codigo.jpg);
   background-size: cover;
@@ -53,6 +61,7 @@ nav ul li a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Seção de Cursos */
 .cursos-grid {
   display: flex;
   gap: 20px;
@@ -77,12 +86,8 @@ nav ul li a {
 }
 
 .cursos h3 {
-  display: flex;
   font-size: 25px;
-  margin-top: 7%;
-  padding-bottom: 0;
-  margin-bottom: 15px;
-  margin-left: 1%;
+  margin: 7% 1% 15px;
   border-bottom: 2px solid #333;
   width: fit-content;
 }
@@ -96,40 +101,13 @@ nav ul li a {
 .curso.grande {
   width: 100%;
   flex: 2;
-  height: 50%;
 }
 
 .curso.grande img {
   height: 500px;
 }
 
-.lado-a-lado {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.lado-a-lado .curso {
-  height: 100%;
-}
-
-.aulas {
-  padding: 40px 20px;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-.aulas h3 {
-  display: flex;
-  font-size: 25px;
-  margin-top: 5%;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  margin-left: 1%;
-  border-bottom: 2px solid #333;
-  width: fit-content;
-}
-
+/* Estilos da seção de Aulas */
 .aulas-grid {
   display: flex;
   justify-content: space-around;
@@ -148,87 +126,110 @@ nav ul li a {
   width: 100%;
   border-radius: 8px;
 }
-
-.aula h4 {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #333;
-}
-
 .projetos {
-  padding: 40px 20px;
-  background-color: white;
-  text-align: center;
-}
-
-.projetos h3 {
-  display: flex;
-  font-size: 25px;
-  margin-top: 5%;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  margin-left: 1%;
-  border-bottom: 2px solid #333;
-  width: fit-content;
-}
-
-.projetos p {
-  margin-bottom: 20px;
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.projetos img {
-  width: 100%;
-  max-width: 300px;
+  flex: 1;
   border-radius: 8px;
-}
-
-footer {
-  background-color: #4caf50;
-  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: white;
-  height: 200px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  overflow: hidden;
+}
+footer {
+  background-color: #333;
+  padding: 40px 20px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
   position: relative;
 }
 
-footer a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 10px;
-  float: right; /* Move o link para a direita */
-}
-
-
-footer p {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-footer {
-  background-color: #4caf50;
-  padding: 20px;
-  text-align: center;
-  color: white;
-  height: 200px;
-  position: relative;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 10px;
-  float: right; /* Move o link para a direita */
-}
-
-
-#copy {
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7%;
+}
+
+.footer-logo p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-social a img {
+  width: 32px;
+  height: 32px;
+  filter: invert(1); /* Faz com que o ícone fique branco */
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
+.footer-rights {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-rights span {
+  margin-top: 10px;
+}
+
+/* Responsividade - ajustando para telas menores */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner h2 {
+    font-size: 32px;
+  }
+
+  .cursos-grid {
+    flex-direction: column;
+  }
+
+  .aulas-grid {
+    flex-direction: column;
+  }
+
+  .aula, .curso.grande {
+    width: 100%;
+  }
+  .projetos {
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  .projetos img{
+    width: 400px;
+  }
+
+  footer a {
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
 }

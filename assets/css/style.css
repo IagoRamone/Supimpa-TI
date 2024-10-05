@@ -7,6 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  max-width: 1444px;
 }
 
 header {
@@ -202,10 +203,21 @@ footer a {
   float: right; /* Move o link para a direita */
 }
 
-
 footer p {
   display: flex;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cursos-grid {
+    width: 50%;
+    margin-left: 20px;
+    
+  }
 }
 
 footer {
@@ -224,7 +236,6 @@ footer a {
   margin-bottom: 10px;
   float: right; /* Move o link para a direita */
 }
-
 
 #copy {
   display: flex;

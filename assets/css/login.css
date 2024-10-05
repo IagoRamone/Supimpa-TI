@@ -7,7 +7,7 @@
 }
 
 body {
-    max-width: 1440px;
+    max-width: 2000px;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
@@ -159,7 +159,7 @@ input {
 }
 
 button {
-    padding: 15px 65px;
+    padding: 15px 100px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -178,6 +178,24 @@ button {
 }
 
 /*Responsividade*/
+@media (min-width: 1800px) and (max-width: 2000px) {
+    .container {
+        max-width: 950px;
+        margin-left: 500px;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1800px) {
+    .container {
+        max-width: 950px;
+        margin-left: 500px;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .container {
+        max-width: 950px;
+        margin-left: 400px;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1400px) {
     .container {
         max-width: 850px;

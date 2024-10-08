@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --cor-lilas: #9B59B6; 
+    --cor-azul-escuro: #2C3E50; 
+    --cor-branco: #FFFFFF; 
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +15,7 @@
 body {
     max-width: 2000px;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #2C3E50;
 }
 /*EStilização dos links*/
 a{
@@ -31,7 +37,8 @@ h1, h2 {
 }
 /*Início do Header*/
 header {
-    background-color: #4CAF50;
+    background-color:#2C3E50;
+    border-bottom: solid 1px black;
     width: 100%;
     height: auto;
     padding: 5px;
@@ -66,7 +73,7 @@ nav {
     font-weight: 600;
 }
 .nav-links li a:hover {
-    color: black;
+    color:var(--cor-lilas);
 }
 
  .nav-links-mobile {
@@ -102,6 +109,7 @@ nav {
 /*Main container*/
 .container {
     display: flex;
+    border: solid 2px black;
     margin-top: 80px;
     background-color: white;
     border-radius: 8px;
@@ -113,7 +121,7 @@ nav {
 
 .container .left {
     flex: 1;
-    background-color: #e0f7fa;
+    background-color: var(--cor-lilas);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,7 +142,7 @@ nav {
 
 .container .right {
     flex: 1;
-    background-color: #4CAF50;
+    background-color:var(--cor-azul-escuro);
     padding: 40px;
     overflow-y: auto; 
 }

@@ -1,4 +1,8 @@
-/* Estilos gerais já aplicados */
+:root {
+  --cor-lilas: #9B59B6; 
+  --cor-azul-escuro: #2C3E50; 
+  --cor-branco: #FFFFFF; 
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +11,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--cor-azul-escuro);
+  color: white;
 }
 a{
   text-decoration: none;
@@ -21,26 +26,23 @@ h1, h2 {
 h3{
   font-size: 25px;
   margin: 7% 1% 15px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #4682B4;
   width: fit-content;
   font-family: "Exo 2";
   font-weight: 700;
 }
 /*Início do Header*/
 header {
-    background-color: #4CAF50;
-    width: 100%;
-    height: auto;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #4caf50;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .logo h1 {
-    color: white;
-    margin-left: 40px;
-    margin-top: 5px;
+  color: white;
+  margin: 0;
 }
 
 /* Nav menu*/
@@ -57,44 +59,11 @@ nav {
     gap: 15px;
 }
 
-.nav-links li a {
-    color: white;
-    font-family: "Poppins";
-    font-weight: 600;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
-.nav-links li a:hover {
-    color: black;
-}
-
- .nav-links-mobile {
-    transition: transform 0.3s ease;
-    transform: translateX(-100%);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: #4CAF50;
-    z-index: 1;
-}
-.nav-links-mobile.active {
-    transform: translateX(0);
-}
-
-/* Estilos para o menu de "toggle" */
-.menu-toggle {
-    display: none; 
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    margin: 5px 0;
-}
-/*Fim do Header*/
 
 /* Banner */
 .banner {
@@ -103,13 +72,13 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 50px 0;
-  height: 300px;
+  padding: 80px 0;
+  height: 400px;
 }
 
 .banner h2 {
   font-size: 2rem;
-  color: #58ac32;
+  color: var(--cor-lilas);
   font-size: 56px;
   text-align: center;
   margin-top: 35px;
@@ -128,7 +97,8 @@ nav {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  background-color: #f9f9f9;
+  color: var(--cor-azul-escuro);
+  background-color: var(--cor-branco);
   padding: 20px;
   overflow: hidden;
 }
@@ -143,14 +113,14 @@ nav {
 .cursos h3 {
   font-size: 25px;
   margin: 7% 1% 15px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #4682B4;
   width: fit-content;
 }
 
 .curso h4 {
   margin-top: 10px;
   font-size: 1.5rem;
-  color: #333;
+  color: var(--cor-lilas);
 }
 
 .curso.grande {
@@ -174,11 +144,16 @@ nav {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
+  color: var(--cor-lilas);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.aula h4{
+  font-size: 30px;
 }
 
 .aula img {
   width: 100%;
+  height: 300px;
   border-radius: 8px;
 }
 .projetos {
@@ -186,14 +161,14 @@ nav {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  background-color: #f9f9f9;
+  background-color:  var(--cor-azul-escuro);
   padding: 20px;
   overflow: hidden;
 }
 footer {
-  background-color: #333;
+  background-color:  #333;
   padding: 40px 20px;
-  color: #fff;
+  color: var(--cor-branco);
   font-family: "Poppins", sans-serif;
   text-align: center;
   position: relative;

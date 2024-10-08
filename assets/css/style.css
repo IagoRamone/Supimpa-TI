@@ -1,4 +1,8 @@
-/* Estilos gerais já aplicados */
+:root {
+  --cor-lilas: #9B59B6; 
+  --cor-azul-escuro: #2C3E50; 
+  --cor-branco: #FFFFFF; 
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,25 +11,28 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--cor-azul-escuro);
+  color: white;
 }
 h3{
   font-size: 25px;
   margin: 7% 1% 15px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #4682B4;
   width: fit-content;
 }
 /* Estilos do cabeçalho */
 header {
-  background-color: #4caf50;
+  background-color: var(--cor-azul-escuro);
   padding: 15px;
   display: flex;
+  margin-right:80px;
+  margin-left: 80px;
   justify-content: space-between;
   align-items: center;
 }
 
 header .logo h1 {
-  color: white;
+  color:  var(--cor-branco);
   margin: 0;
 }
 
@@ -36,9 +43,12 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--cor-branco);
   text-decoration: none;
   font-weight: bold;
+}
+nav ul li a:hover {
+  color:var(--cor-lilas) ;
 }
 
 /* Banner */
@@ -48,13 +58,13 @@ nav ul li a {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 50px 0;
-  height: 300px;
+  padding: 80px 0;
+  height: 400px;
 }
 
 .banner h2 {
   font-size: 2rem;
-  color: #58ac32;
+  color: var(--cor-lilas);
   font-size: 56px;
   text-align: center;
   margin-top: 35px;
@@ -73,7 +83,8 @@ nav ul li a {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  background-color: #f9f9f9;
+  color: var(--cor-azul-escuro);
+  background-color: var(--cor-branco);
   padding: 20px;
   overflow: hidden;
 }
@@ -88,14 +99,14 @@ nav ul li a {
 .cursos h3 {
   font-size: 25px;
   margin: 7% 1% 15px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #4682B4;
   width: fit-content;
 }
 
 .curso h4 {
   margin-top: 10px;
   font-size: 1.5rem;
-  color: #333;
+  color: var(--cor-lilas);
 }
 
 .curso.grande {
@@ -119,11 +130,16 @@ nav ul li a {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
+  color: var(--cor-lilas);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.aula h4{
+  font-size: 30px;
 }
 
 .aula img {
   width: 100%;
+  height: 300px;
   border-radius: 8px;
 }
 .projetos {
@@ -131,14 +147,14 @@ nav ul li a {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  background-color: #f9f9f9;
+  background-color:  var(--cor-azul-escuro);
   padding: 20px;
   overflow: hidden;
 }
 footer {
-  background-color: #333;
+  background-color:  #333;
   padding: 40px 20px;
-  color: #fff;
+  color: var(--cor-branco);
   font-family: "Poppins", sans-serif;
   text-align: center;
   position: relative;
